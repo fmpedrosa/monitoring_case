@@ -1,4 +1,4 @@
-CREATE OR REPLACE transactions.running_health ( 
+CREATE OR REPLACE VIEW transactions.running_health ( 
 with all_times_and_models as (
 SELECT distinct
   t1.time,
