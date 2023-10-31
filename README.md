@@ -18,11 +18,15 @@ It has the following functions:
 - Uploads the Anomalies report to Bigquery or to a local csv file in output_files.
 - Uploads the ocurrences transformed to Bigquery or to a local csv file in output_files.
 
+
+## simulating_monitoring notebook
+This file is used to simulate sending information from the test dataset to the database by importing and using the ModelProcessorOperator Class.
+
 ## data
 - transactions_1.csv: financial transactions. Used to train the models.
 - transactions_2.csv: financial transactions. Used to test the models.
 
-# queries
+## queries
 -  running_anomalies: Queries the transactions_raw and anomalies_raw tables, and creates a view to check for ocurrences of anomalies in the last 10 minutes(running_count_10) for every model.
 - create_tables: Creates the transactions_raw and anomalies_raw based on the schema.
 
